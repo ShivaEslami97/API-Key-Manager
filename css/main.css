@@ -1,0 +1,122 @@
+.api__inputs {
+  width: 35%;
+  /* flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; */
+}
+.api__content {
+  width: 60%;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.form__inputs {
+  flex-direction: column;
+  align-items: baseline;
+  gap: 1rem;
+}
+.form__inputs + .form__inputs {
+  margin-top: 1.5rem;
+}
+.api__inputs #btn_submit {
+  margin-top: 1.5rem;
+}
+
+.form__inputs label {
+  font-weight: 500;
+}
+.form__inputs input {
+  background-color: rgb(217 217 230);
+  outline: 0;
+  border: 0;
+  border-radius: 0.8rem;
+  padding: 0.9rem 5.7rem;
+}
+.api__table {
+  background-color: #dde0e0;
+  border-spacing: 0rem;
+  margin: 0;
+  padding: 2rem 2rem;
+  width: 100%;
+  border-radius: 1rem;
+}
+.api__table thead tr {
+  background-color: #a7b5b6;
+}
+.api__table tr {
+  padding: 0.35em;
+}
+
+.api__table th,
+.api__table td {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 400;
+}
+.api__table td .btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+}
+.api__table th {
+  font-size: 1.4rem;
+  letter-spacing: 0.1em;
+  padding: 1.5rem 1.3rem;
+  font-weight: 700;
+}
+table th:first-child {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+@media screen and (max-width: 600px) {
+  .api__table {
+    border: 0;
+  }
+
+  .api__table caption {
+    font-size: 1.3rem;
+  }
+
+  .api__table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .api__table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625rem;
+  }
+
+  .api__table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: 0.8rem;
+    text-align: right;
+  }
+
+  .api__table td::before {
+    /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .api__table td:last-child {
+    border-bottom: 0;
+  }
+}

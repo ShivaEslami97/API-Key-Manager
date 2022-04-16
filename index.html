@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__heading">JS - Part 1</h1>
+        </div>
+    </header>
+    <main>
+        <section class="api-manager">
+            <div class="container flex align-items-center">
+                <div class="api__inputs">
+                    <div class="form__inputs flex">
+                        <label for="user_name">User Name</label>
+                        <input id="user_name" type="text" class="">
+                    </div>
+                    <div class="form__inputs flex">
+                        <label for="api_key">Api Key</label>
+                        <input id="api_key" type="text" class="">
+                    </div>
+                    <div class="form__inputs flex">
+                        <label for="api_secret">Api Secret</label>
+                        <input id="api_secret" type="text" class="">
+                    </div>
+                    <button class="btn btn__primary" id="btn_submit" type="submit">Submit</button>
+                </div>
+                <div class="api__content flex">
+                    <h2 class="text-align-center">API Key Manager</h2>
+                    <table class="api__table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">User Name</th>
+                                <th scope="col">Api Key</th>
+                                <th scope="col">Api Secret</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Account">1</td>
+                                <td data-label="Due Date">shiva</td>
+                                <td data-label="Amount">wegj189asfhkljzx</td>
+                                <td data-label="Period">sdgf************p2</td>
+                                <td data-label="Account">
+                                    <button class="btn btn__primary btn__delete" type="submit">Delete</button>
+                                    <button class="btn btn__primary btn__edit" type="submit">Edit</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-label="Account">1</td>
+                                <td data-label="Due Date">shiva</td>
+                                <td data-label="Amount">wegj189asfhkljzx</td>
+                                <td data-label="Period">sdgf************p2</td>
+                                <td data-label="Account">
+                                    <button class="btn btn__primary btn__delete" type="submit">Delete</button>
+                                    <button class="btn btn__primary btn__edit" type="submit">Edit</button>
+                                </td>
+                            </tr>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
