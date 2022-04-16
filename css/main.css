@@ -1,8 +1,8 @@
 .api__inputs {
   width: 30%;
-  /* flex-direction: column;
+  flex-direction: column;
   align-items: center;
-  gap: 1.5rem; */
+  gap: 1.5rem;
 }
 .api__content {
   width: 60%;
@@ -15,12 +15,12 @@
   align-items: baseline;
   gap: 1rem;
 }
-.form__inputs + .form__inputs {
+/* .form__inputs + .form__inputs {
   margin-top: 1.5rem;
 }
 .api__inputs #btn_submit {
   margin-top: 1.5rem;
-}
+} */
 
 .form__inputs label {
   font-weight: 500;

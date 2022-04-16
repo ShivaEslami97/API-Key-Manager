@@ -59,7 +59,7 @@ section {
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
-  gap: 2rem;
+  gap: 3rem;
 }
 .grid {
   display: -ms-grid;
@@ -72,7 +72,7 @@ section {
   padding-inline: 2em;
   margin-inline: auto;
   width: 1320px;
-  max-width: 93%;
+  max-width: 95%;
 }
 .col {
   width: 100%;
