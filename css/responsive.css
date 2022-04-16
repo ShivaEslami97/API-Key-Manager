@@ -1,16 +1,27 @@
-@media screen and (max-width: 600px) {
-  .api-manager .container {
-    flex-wrap: wrap;
+@media screen and (max-width: 1147px) {
+  .container {
+    max-width: 100%;
   }
+  .api__content {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 989px) {
   .api__inputs {
     width: 90%;
+    text-align: center;
   }
   .api__content {
     width: 90%;
-    flex-direction: column;
+  }
+  .form__inputs {
     align-items: center;
   }
-
+  .api-manager .container {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
   .api__table {
     border: 0;
   }
