@@ -1,0 +1,50 @@
+@media screen and (max-width: 600px) {
+  .api-manager .container {
+    flex-wrap: wrap;
+  }
+  .api__inputs {
+    width: 90%;
+  }
+  .api__content {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .api__table {
+    border: 0;
+  }
+  .api__table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  .api__table tr {
+    border-bottom: 3px solid #ddd;
+    display: block;
+    margin-bottom: 0.625rem;
+  }
+
+  .api__table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    text-align: right;
+  }
+
+  .api__table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .api__table td:last-child {
+    border-bottom: 0;
+  }
+}
